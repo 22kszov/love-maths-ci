@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- font awesome and google fonts -->
-    <script src="https://kit.fontawesome.com/a03d2fdda8.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/a03d2fdda8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Love Maths!</title>
+  </head>
+  <body>
     <h1 class="heading">
-        <img src="assets/images/logo.png" alt="Logo" class="logo">
-        Love Maths
+      <img src="assets/images/logo.png" alt="Logo" class="logo" />
+      Love Maths
     </h1>
 
     <div class="game-area">
-        <div class="controls-area">
-            <button data-type="addition" class="btn btn--big btn--green">
-                <i class="fa-solid fa-plus"></i>
-            </button>
-            <button data-type="subtract" class="btn btn--big btn--blue">
-                <i class="fa-solid fa-minus"></i>
-            </button>
-            <button data-type="multiply" class="btn btn--big btn--orange">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button data-type="division" class="btn btn--big btn--red">
-                <i class="fa-solid fa-divide"></i>
-            </button>
-        </div>
-        <div class="question-area">
-            <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operand2">0</span>
-            <span>=</span>
-            <p class="answer-message">Enter Answer:</p>
-            <input type="number" id="answer-box">
-            <button data-type="submit" class="btn btn--gray">Submit Answer</button>
-        </div>
+      <div class="controls-area">
+        <button data-type="addition" class="btn btn--big btn--green">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button data-type="subtract" class="btn btn--big btn--blue">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <button data-type="multiply" class="btn btn--big btn--orange">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button data-type="division" class="btn btn--big btn--red">
+          <i class="fa-solid fa-divide"></i>
+        </button>
+      </div>
+      <div class="question-area">
+        <span id="operand1">0</span>
+        <span id="operator">x</span>
+        <span id="operand2">0</span>
+        <span>=</span>
+        <p class="answer-message">Enter Answer:</p>
+        <input type="number" id="answer-box" />
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+      </div>
     </div>
 
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+      <p class="scores">Correct Answers <span id="score">0</span></p>
+      <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
-    
+
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
